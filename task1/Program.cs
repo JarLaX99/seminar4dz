@@ -7,13 +7,13 @@ int Readint(string text)
     return Math.Abs(Convert.ToInt32(Console.ReadLine()));
 }
 
-int Pow(int num,int numberN)
-{  
-    int  sum = num;
+int Pow(int num, int numberN)
+{
+    int sum = num;
 
-    for(int i = 1;i<numberN;i++)
+    for (int i = 1; i < numberN; i++)
     {
-         sum = sum * num;
+        sum = sum * num;
     }
     return sum;
 }
@@ -21,5 +21,5 @@ int Pow(int num,int numberN)
 int numberA = Readint("Введите первое число: ");
 int numberB = Readint("Введите второе число: ");
 
-int result = Pow(numberA,numberB);
+int result = Pow(numberA, numberB);
 System.Console.WriteLine($"{numberA}^{numberB} = {result}");
